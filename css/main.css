@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #003E52;
+  list-style: none;
+  font-family: Roboto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  header {
+    justify-content: space-around;
+  }
+}
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+@media (min-width: 600px) {
+  header ul {
+    padding-top: 30px;
+  }
+}
+header li {
+  padding: 5px;
+}
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+  color: #6cadc2;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: right;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  .product {
+    justify-content: space-around;
+  }
+}
+.product img {
+  order: 1;
+}
+@media (min-width: 600px) {
+  .product img {
+    order: 0;
+    height: 500px;
+  }
+}
+@media (min-width: 600px) {
+  .product__item {
+    padding-top: 5%;
+    max-width: 30%;
+  }
+}
+.product p {
+  margin-bottom: 10px;
+}
+@media (min-width: 600px) {
+  .product p {
+    margin-bottom: 20px;
+  }
+}
+
+.illustration-grid {
+  display: grid;
+  grid-column: 1fr;
+}
+@media (min-width: 600px) {
+  .illustration-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.illustration-grid img {
+  width: 100%;
+}
+
+.menu {
+  padding: 10px;
+}
+.menu h2 {
+  text-align: center;
+}
+.menu ul {
+  border-top: solid;
+  padding-top: 30px;
+}
+@media (min-width: 600px) {
+  .menu ul {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 75px;
+  }
+}
+.menu p {
+  padding: 5px 0 15px;
+}
+@media (min-width: 600px) {
+  .menu p {
+    padding: 20px 0;
+  }
+}
+
+.illustration img {
+  width: 100%;
+}
+
+.iframe {
+  margin: 10px 0;
+}
+.iframe iframe {
+  height: 300px;
+}
+
+footer {
+  background-color: #003e52;
+  text-align: center;
+  height: 100px;
+}
+@media (min-width: 600px) {
+  footer {
+    height: 200px;
+  }
+}
+footer h2 {
+  color: #ffffff;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  footer h2 {
+    padding: 50px;
+  }
+}
+footer p {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

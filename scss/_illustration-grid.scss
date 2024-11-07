@@ -1,8 +1,11 @@
 .illustration-grid{
     display: grid;
     grid-column: 1fr;
+    @media (min-width: $laptop){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     img{
-        max-width: 100%;
+        width: 100%;
     }
 }

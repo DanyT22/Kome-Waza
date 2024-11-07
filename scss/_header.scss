@@ -1,19 +1,31 @@
 header{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     text-align: center;
-    justify-content: center;
-    width: 100%;
+
+    @media (min-width: $laptop){
+        justify-content: space-around;
+    }
 
 
     ul{
-        display: flex;
-        flex-wrap: wrap;
+        @include flex;
         justify-content: space-around;
-        margin: auto 5%;
+
+        @media (min-width: $laptop){
+            padding-top: 30px;
+        }
     }
 
     li{
         padding: 5px
     };
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: $hoverColor;
+    }
 }

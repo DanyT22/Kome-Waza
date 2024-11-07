@@ -1,14 +1,31 @@
 .product{
-    display: flex;
-    flex-direction: column;
+    @include flex;
     text-align: right;
     padding: 10px;
 
+    @media (min-width: $laptop){
+        justify-content: space-around;
+    }
+
     img{
         order: 1;
+        @media (min-width: $laptop){
+            order: 0;
+            height: 500px;
+        }
+    }
+
+    &__item{
+        @media (min-width:$laptop){
+            padding-top: 5%;
+            max-width: 30%;
+        }
     }
 
     p{
         margin-bottom: 10px;
+        @media (min-width: $laptop){
+            margin-bottom: 20px;
+        }
     }
 }

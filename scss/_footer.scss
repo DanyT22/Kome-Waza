@@ -1,0 +1,22 @@
+footer{
+    background-color: $backgroundFooter;
+    text-align: center;
+    height: 100px;
+
+    @media (min-width: $laptop){
+        height: 200px;
+    }
+
+    h2{
+        color: $fontColorFooter;
+        padding: 10px;
+
+        @media (min-width: $laptop){
+            padding: 50px;
+        }
+    }
+
+    p{
+        color: $fontColorFooter;
+    }
+}
