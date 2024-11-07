@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto 5%;
+    }
+
+    li{
+        padding: 5px
+    };
+}

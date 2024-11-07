@@ -1,0 +1,14 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px;
+
+    img{
+        order: 1;
+    }
+
+    p{
+        margin-bottom: 10px;
+    }
+}

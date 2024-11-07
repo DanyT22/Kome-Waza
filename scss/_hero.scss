@@ -1,0 +1,9 @@
+.hero{
+    img{
+        height: 500px;
+
+        @media(min-width: $laptop){
+            width: 100%;
+        }
+    }
+}
