@@ -1,5 +1,6 @@
 .menu{
     padding: 10px;
+    position: relative;
 
     h2{
         text-align: center;
@@ -21,6 +22,21 @@
 
         @media (min-width: $laptop){
             padding: 20px 0;
+        }
+        }
+
+    img{
+        z-index: -2;
+        position: absolute;
+        width: 100px;
+        bottom: 0%;
+        right: 0%;
+        rotate: -30deg;
+
+        @media (min-width: $laptop){
+            width: 200px;
+            right: 5%;
+            bottom: 5%;
         }
     }
 }
